@@ -1722,7 +1722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.HighDefinition.Runtime::UnityEngine.Rendering.HighDefinition.LocalVolumetricFog
   parameters:
-    albedo: {r: 0.43827817, g: 0.32156864, b: 0.4627451, a: 1}
+    albedo: {r: 0.4627451, g: 0.39406347, b: 0.32156864, a: 1}
     meanFreePath: 22.92
     blendingMode: 1
     priority: 0
@@ -1741,7 +1741,7 @@ MonoBehaviour:
     invertFade: 0
     distanceFadeStart: 10000
     distanceFadeEnd: 10000
-    textureOffset: {x: -0, y: -0, z: -0}
+    textureOffset: {x: -0.27582008, y: -0, z: -0}
     falloffMode: 0
     maskMode: 0
     materialMask: {fileID: 0}
@@ -2021,6 +2021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 100
+  currentHealth: 0
 --- !u!1001 &1778398658
 PrefabInstance:
   m_ObjectHideFlags: 0
