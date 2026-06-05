@@ -1741,7 +1741,7 @@ MonoBehaviour:
     invertFade: 0
     distanceFadeStart: 10000
     distanceFadeEnd: 10000
-    textureOffset: {x: -0.27582008, y: -0, z: -0}
+    textureOffset: {x: -0, y: -0, z: -0}
     falloffMode: 0
     maskMode: 0
     materialMask: {fileID: 0}
@@ -1867,7 +1867,7 @@ GameObject:
   - component: {fileID: 1687065873}
   - component: {fileID: 1687065872}
   - component: {fileID: 1687065871}
-  - component: {fileID: 1687065870}
+  - component: {fileID: 1687065877}
   - component: {fileID: 1687065876}
   m_Layer: 0
   m_Name: Capsule (1)
@@ -1876,21 +1876,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1687065870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687065869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edc3fb7fa4ae6a34bb6441aec389161c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  patrolRadius: 53.5
-  chaseRange: 10
-  player: {fileID: 1061881324}
 --- !u!195 &1687065871
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2021,7 +2006,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 100
-  currentHealth: 0
+--- !u!114 &1687065877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687065869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0300239ac480f0f4898a5de9df5c50a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
+  patrolRadius: 15
+  chaseRange: 10
+  player: {fileID: 1061881324}
 --- !u!1001 &1778398658
 PrefabInstance:
   m_ObjectHideFlags: 0
