@@ -3,7 +3,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
 
     void Start()
     {
@@ -15,7 +15,12 @@ public class Health : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }

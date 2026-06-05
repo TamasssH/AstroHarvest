@@ -9,6 +9,7 @@ public class ParticleBullet : MonoBehaviour
     public GameObject spark;
 
     private float nextFireTime = 0f;
+
     List<ParticleCollisionEvent> colEvents = new List<ParticleCollisionEvent>();
 
     private void Start()
@@ -27,16 +28,12 @@ public class ParticleBullet : MonoBehaviour
 
     public void OnParticleCollision(GameObject other)
     {
-        Health health = other.GetComponent<Health>();
-        if (health != null)
-        {
-            health.TakeDamage(damage);
-        }
-
-        // Optional spark
-        // int events = ParticleSys.GetCollisionEvents(other, colEvents);
-        // for (int i = 0; i < events; i++) {
-        //     Instantiate(spark, colEvents[i].intersection, Quaternion.LookRotation(colEvents[i].normal));
-        // }
+        Debug.Log("Hit");
+        //int events = ParticleSys.GetCollisionEvents(other, colEvents);
+        //Debug.Log("Hit");
+        //for (int i = 0; i < events; i++) 
+        //{
+        //    Instantiate(spark, colEvents[i].intersection, Quaternion.LookRotation(colEvents[i].normal));
+        //}
     }
 }
