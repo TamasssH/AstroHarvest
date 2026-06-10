@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WeaponSwitcher : MonoBehaviour
 {
-    public GameObject[] weapons;
+    public GameObject[] weapons; 
     private int currentWeapon = 0;
 
     void Start()
@@ -13,7 +13,7 @@ public class WeaponSwitcher : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(1))
-        {
+        { // RMB
             currentWeapon = (currentWeapon == 0) ? 1 : 0;
             SwitchToWeapon(currentWeapon);
         }
@@ -23,7 +23,7 @@ public class WeaponSwitcher : MonoBehaviour
     {
         for (int i = 0; i < weapons.Length; i++)
         {
-            if (weapons[i]) weapons[i].SetActive(i == index);
+            weapons[i].SetActive(i == index);
         }
     }
 }
