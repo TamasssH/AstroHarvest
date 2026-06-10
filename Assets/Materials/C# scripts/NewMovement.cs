@@ -14,8 +14,12 @@ public class NewMovement : MonoBehaviour
     [SerializeField] float regenRate = 20f;
     [SerializeField] float drainRate = 30f;
 
+    [Header("Gravity")]
+    [SerializeField] float gravity = -20f;
+
     private float currentStamina;
     private bool isRunning;
+    private Vector3 verticalVelocity;
 
     void Start()
     {
@@ -27,10 +31,18 @@ public class NewMovement : MonoBehaviour
     {
         Stamina();
 
+        // Movement
         float currentSpeed = isRunning ? runSpeed : walkSpeed;
-
         Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
         move = transform.TransformDirection(move) * currentSpeed;
+
+        // Gravity
+        if (cc.isGrounded && verticalVelocity.y < 0)
+            verticalVelocity.y = -2f; // small downward force
+        else
+            verticalVelocity.y += gravity * Time.deltaTime;
+
+        move += verticalVelocity;
 
         cc.Move(move * Time.deltaTime);
     }
@@ -38,7 +50,6 @@ public class NewMovement : MonoBehaviour
     void Stamina()
     {
         isRunning = Input.GetKey(KeyCode.LeftShift) && currentStamina > 0f;
-
         if (isRunning)
             currentStamina -= drainRate * Time.deltaTime;
         else if (currentStamina < maxStamina)
