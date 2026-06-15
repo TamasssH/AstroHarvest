@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &38212557
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.5465555
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1175.2335
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: m_Name
+      value: Light 2 Neon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 359701d101b29024b993548b53dda8b7, type: 3}
 --- !u!1 &933118120
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +325,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 579317afb86ef4f46bfd437440d98696, type: 3}
+--- !u!1001 &1562485490
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.864742
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.08891604
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1172.812
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: m_Name
+      value: LIGHT 1 Neon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
 --- !u!1 &1624181797
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,14 +408,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624181797}
   m_Enabled: 1
-  serializedVersion: 12
+  serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 100000
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 0.5, y: 0.5}
+  m_CookieSize: 10
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -338,7 +452,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
-  m_AreaSize: {x: 1, y: 1}
+  m_AreaSize: {x: 0.01, y: 0.01}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
@@ -386,9 +500,6 @@ MonoBehaviour:
   m_LuxAtDistance: 1
   m_Intensity: 0
   m_InnerSpotPercent: -1
-  m_ShapeWidth: -1
-  m_ShapeHeight: -1
-  m_AspectRatio: -1
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
   m_VolumetricDimmer: 1
@@ -397,6 +508,9 @@ MonoBehaviour:
   m_AffectDiffuse: 1
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
+  m_ShapeWidth: 0.01
+  m_ShapeHeight: 0.01
+  m_AspectRatio: -1
   m_ShapeRadius: 0.025
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
@@ -515,3 +629,5 @@ SceneRoots:
   - {fileID: 933118123}
   - {fileID: 1624181799}
   - {fileID: 1264378639}
+  - {fileID: 38212557}
+  - {fileID: 1562485490}
