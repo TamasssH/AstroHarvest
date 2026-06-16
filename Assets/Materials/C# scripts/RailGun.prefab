@@ -79,12 +79,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5123496068449919971, guid: 39b830536cbb61e44a8b39c5c27cb604, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: -5123496068449919971, guid: 39b830536cbb61e44a8b39c5c27cb604, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: -5123496068449919971, guid: 39b830536cbb61e44a8b39c5c27cb604, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: -5123496068449919971, guid: 39b830536cbb61e44a8b39c5c27cb604, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 39b830536cbb61e44a8b39c5c27cb604, type: 3}
       propertyPath: m_Name
       value: RailGun
       objectReference: {fileID: 0}
+    - target: {fileID: 5567551651136234911, guid: 39b830536cbb61e44a8b39c5c27cb604, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 46e56c75bfaca7341a93a0c36696d75e, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -8700617353114198275, guid: 39b830536cbb61e44a8b39c5c27cb604, type: 3}
+    - {fileID: 65702495048144492, guid: 39b830536cbb61e44a8b39c5c27cb604, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 39b830536cbb61e44a8b39c5c27cb604, type: 3}
       insertIndex: -1
@@ -125,7 +147,6 @@ MonoBehaviour:
   ParticleSys: {fileID: 7261826272707630508}
   fireRate: 0.2
   damage: 20
-  spark: {fileID: 5629139324538597729, guid: ec01cb999029edd41a195e3ad8550455, type: 3}
 --- !u!198 &7261826272707630508
 ParticleSystem:
   m_ObjectHideFlags: 0
