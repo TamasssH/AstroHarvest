@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: intern
+  m_Name: GEN base
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 0a2d4d6551eab0d4586f8c93302a4510, type: 3}
+        m_Texture: {fileID: 2800000, guid: 44a19872a95c9f447a5d436687730511, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -73,15 +73,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0a2d4d6551eab0d4586f8c93302a4510, type: 3}
+        m_Texture: {fileID: 2800000, guid: 44a19872a95c9f447a5d436687730511, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 2800000, guid: c870f01a94864774cb33cb306a96a93f, type: 3}
+        m_Texture: {fileID: 2800000, guid: d1b05bcb16c36e34e90f502aca69be94, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 56c43eb875e139c4a9ed5aa94359a10e, type: 3}
+        m_Texture: {fileID: 2800000, guid: c6b7615ab085c97409d444741e2e4971, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -245,8 +245,8 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.59748423, g: 0.59748423, b: 0.59748423, a: 1}
-    - _Color: {r: 0.59748423, g: 0.59748423, b: 0.59748423, a: 1}
+    - _BaseColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    - _Color: {r: 0.9, g: 0.9, b: 0.9, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
@@ -262,7 +262,7 @@ Material:
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &6531056266894578648
+--- !u!114 &4347654489986931666
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
