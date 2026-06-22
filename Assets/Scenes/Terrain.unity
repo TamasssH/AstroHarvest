@@ -219,7 +219,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 5b86730d46f9493458cf7af27bd00c18, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -250,7 +250,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38522573}
-  m_Mesh: {fileID: 6255687079079774844, guid: abbfab8e9a0031e4599e59de40492cb9, type: 3}
+  m_Mesh: {fileID: -7387706064836869012, guid: abbfab8e9a0031e4599e59de40492cb9, type: 3}
 --- !u!1001 &68988796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2186,7 +2186,7 @@ MonoBehaviour:
     invertFade: 0
     distanceFadeStart: 10000
     distanceFadeEnd: 10000
-    textureOffset: {x: 0, y: 0, z: 0}
+    textureOffset: {x: -3.8759441, y: -0, z: -0}
     falloffMode: 0
     maskMode: 0
     materialMask: {fileID: 0}
