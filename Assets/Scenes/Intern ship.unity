@@ -168,7 +168,7 @@ MonoBehaviour:
     invertFade: 0
     distanceFadeStart: 10000
     distanceFadeEnd: 10000
-    textureOffset: {x: 0, y: 0, z: 0}
+    textureOffset: {x: -0, y: -0, z: -0}
     falloffMode: 0
     maskMode: 0
     materialMask: {fileID: 0}
@@ -2553,8 +2553,53 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b2150e08dd7ac64d975a7fe8a79eb72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1711355292}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b2150e08dd7ac64d975a7fe8a79eb72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1711355291}
   m_SourcePrefab: {fileID: 100100000, guid: 6b2150e08dd7ac64d975a7fe8a79eb72, type: 3}
+--- !u!1 &1711355290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b2150e08dd7ac64d975a7fe8a79eb72, type: 3}
+  m_PrefabInstance: {fileID: 1711355289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1711355291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711355290}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3193402, y: 1.4021381, z: 1.4245044}
+  m_Center: {x: 0.048580278, y: 0.7542986, z: -0.0032398105}
+--- !u!114 &1711355292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711355290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44537fd8166f084459ce11263136f9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GeneratorRepair
+  repairCost: 10
 --- !u!4 &1768437829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4320720705915988843, guid: 364e9dc5c5f13054ca141eadcce49bf9, type: 3}
@@ -2783,8 +2828,53 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b2150e08dd7ac64d975a7fe8a79eb72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1973667169}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b2150e08dd7ac64d975a7fe8a79eb72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1973667168}
   m_SourcePrefab: {fileID: 100100000, guid: 6b2150e08dd7ac64d975a7fe8a79eb72, type: 3}
+--- !u!1 &1973667167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b2150e08dd7ac64d975a7fe8a79eb72, type: 3}
+  m_PrefabInstance: {fileID: 1973667166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1973667168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973667167}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3193412, y: 1.4021382, z: 1.4245051}
+  m_Center: {x: 0.0485803, y: 0.7542987, z: -0.0032398112}
+--- !u!114 &1973667169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973667167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44537fd8166f084459ce11263136f9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GeneratorRepair
+  repairCost: 10
 --- !u!1001 &1993129900
 PrefabInstance:
   m_ObjectHideFlags: 0

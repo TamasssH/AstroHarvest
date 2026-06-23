@@ -6,6 +6,6 @@ public class PlaySoundOnEnable : MonoBehaviour
 
     void OnEnable()
     {
-        SoundManager.instance.PlayDeath(volume);
+        //SoundManager.instance.PlayDeath(volume);
     }
 }
