@@ -15,26 +15,28 @@ public class Harvester : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Camera cam = Camera.main;
-            if (cam == null) return; // Fix for null camera
+            if (cam == null) return;
 
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit, range, oreLayer) &&
                 hit.collider != null && hit.collider.CompareTag("Ore"))
             {
+
                 harvesting = true;
+
+                harvestTimer += Time.deltaTime;
+                if (harvestTimer >= 1f)
+                {
+                    oreCount += 20;
+                    Destroy(hit.collider.gameObject);
+                    Debug.Log("Harvested 20 ore!");
+                    harvestTimer = 0f;
+                    return;
+                }
             }
         }
 
-        if (harvesting)
-        {
-            harvestTimer += Time.deltaTime;
-            if (harvestTimer >= 1f)
-            {
-                oreCount += Random.Range(1, 4);
-                harvestTimer = 0f;
-            }
-        }
-        else
+        if (!harvesting)
         {
             harvestTimer = 0f;
         }

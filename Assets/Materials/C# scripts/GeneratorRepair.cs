@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class GeneratorRepair : MonoBehaviour
 {
-    public int repairCost = 10;   // ores needed per repair
+    public int repairCost = 10;
+    public GameObject winCanvas;   // Drag your Win Canvas here
 
     private bool playerInRange = false;
+    private int totalDeposited = 0;
 
     void Update()
     {
@@ -14,8 +16,14 @@ public class GeneratorRepair : MonoBehaviour
             if (harvester != null && harvester.oreCount >= repairCost)
             {
                 harvester.oreCount -= repairCost;
-                Debug.Log("Ore deposited! Generator repaired.");
-                
+                totalDeposited += repairCost;
+
+                if (totalDeposited >= 120 && winCanvas != null)
+                {
+                    winCanvas.SetActive(true);
+                    Debug.Log("You Win!");
+                    ;
+                }
             }
         }
     }
