@@ -9,13 +9,13 @@ public class SceneLoader : MonoBehaviour
         {
             string sceneName = SceneManager.GetActiveScene().name;
 
-            if (sceneName == "Game")
+            if (sceneName == "GAME")
             {
-                SceneManager.LoadScene("Game Options");
+                SceneManager.LoadScene("Settings");
             }
-            else if (sceneName == "Game Options")
+            else if (sceneName == "Settings")
             {
-                SceneManager.LoadScene("Game");
+                SceneManager.LoadScene("GAME");
             }
             else if (sceneName == "Settings")
             {
