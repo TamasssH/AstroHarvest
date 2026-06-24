@@ -5632,7 +5632,7 @@ MonoBehaviour:
     invertFade: 0
     distanceFadeStart: 10000
     distanceFadeEnd: 10000
-    textureOffset: {x: 0, y: 0, z: 0}
+    textureOffset: {x: -0, y: -0, z: -0}
     falloffMode: 0
     maskMode: 0
     materialMask: {fileID: 0}
@@ -7129,6 +7129,10 @@ PrefabInstance:
     - target: {fileID: 9220619420526486979, guid: 53c876a3c00b68649bbed19dcdc09ec5, type: 3}
       propertyPath: m_Name
       value: LoseScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 9220619420526486979, guid: 53c876a3c00b68649bbed19dcdc09ec5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
