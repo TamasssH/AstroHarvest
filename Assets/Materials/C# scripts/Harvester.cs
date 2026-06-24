@@ -1,10 +1,13 @@
 using UnityEngine;
+using TMPro; 
 
 public class Harvester : MonoBehaviour
 {
     public float range = 3f;
     public LayerMask oreLayer;
     public int oreCount = 0;
+
+    public TextMeshProUGUI oreText;
 
     private float harvestTimer = 0f;
 
@@ -23,22 +26,19 @@ public class Harvester : MonoBehaviour
             {
 
                 harvesting = true;
-
                 harvestTimer += Time.deltaTime;
+
                 if (harvestTimer >= 1f)
                 {
                     oreCount += 20;
                     Destroy(hit.collider.gameObject);
-                    Debug.Log("Harvested 20 ore!");
                     harvestTimer = 0f;
-                    return;
                 }
             }
         }
 
-        if (!harvesting)
-        {
-            harvestTimer = 0f;
-        }
+        if (!harvesting) harvestTimer = 0f;
+
+        if (oreText) oreText.text = "Ore: " + oreCount;
     }
 }
