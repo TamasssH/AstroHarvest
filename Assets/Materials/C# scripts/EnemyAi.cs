@@ -5,10 +5,14 @@ public class EnemyAI : MonoBehaviour
 {
     public float patrolRadius = 15f;
     public float chaseRange = 10f;
-    public Transform player;
+    public float attackRange = 2f;
+    public int attackDamage = 15;
+    public float attackRate = 1.5f;
 
+    public Transform player;
     private NavMeshAgent agent;
     private bool isChasing = false;
+    private float nextAttackTime = 0f;
 
     void Start()
     {
@@ -20,7 +24,12 @@ public class EnemyAI : MonoBehaviour
     {
         float dist = Vector3.Distance(transform.position, player.position);
 
-        if (dist <= chaseRange)
+        if (dist <= attackRange && Time.time >= nextAttackTime)
+        {
+            AttackPlayer();
+            nextAttackTime = Time.time + attackRate;
+        }
+        else if (dist <= chaseRange)
         {
             isChasing = true;
             agent.destination = player.position;
@@ -36,24 +45,17 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void GotoRandomPoint()
+    void AttackPlayer()
     {
+        Health pHealth = player.GetComponent<Health>();
+        if (pHealth != null) pHealth.TakeDamage(attackDamage);
+    }
+
+    void GotoRandomPoint()
+    { /* same as before */
         Vector3 randomPos = Random.insideUnitSphere * patrolRadius + transform.position;
         NavMeshHit hit;
         if (NavMesh.SamplePosition(randomPos, out hit, patrolRadius, NavMesh.AllAreas))
-        {
             agent.destination = hit.position;
-        }
-    }
-
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, patrolRadius);
-        if (agent)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawLine(transform.position, agent.destination);
-        }
     }
 }

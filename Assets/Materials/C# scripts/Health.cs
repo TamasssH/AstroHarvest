@@ -15,7 +15,14 @@ public class Health : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            if (gameObject.CompareTag("Player"))
+            {
+                GetComponent<PlayerDeath>().OnDeath();
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
