@@ -985,9 +985,8 @@ MonoBehaviour:
   sfxSource: {fileID: 0}
   hoverSound: {fileID: 0}
   clickSound: {fileID: 0}
+  laserSound: {fileID: 0}
   deathSound: {fileID: 0}
-  winSound: {fileID: 0}
-  eventSound: {fileID: 0}
 --- !u!4 &155867558
 Transform:
   m_ObjectHideFlags: 0
@@ -1947,6 +1946,10 @@ PrefabInstance:
       propertyPath: stopAction
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7287782935094768412, guid: 364e9dc5c5f13054ca141eadcce49bf9, type: 3}
+      propertyPath: shootSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 34a83357613a05a4dbb0d9d7a3161876, type: 3}
     - target: {fileID: 8306399420958579144, guid: 364e9dc5c5f13054ca141eadcce49bf9, type: 3}
       propertyPath: m_Name
       value: Capsule
@@ -5771,7 +5774,7 @@ MonoBehaviour:
     invertFade: 0
     distanceFadeStart: 10000
     distanceFadeEnd: 10000
-    textureOffset: {x: 0, y: 0, z: 0}
+    textureOffset: {x: -0, y: -0, z: -0}
     falloffMode: 0
     maskMode: 0
     materialMask: {fileID: 0}
