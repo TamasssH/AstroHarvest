@@ -386,7 +386,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &341232108
 MeshFilter:
@@ -691,7 +690,7 @@ PrefabInstance:
     - target: {fileID: -4053776490188710483, guid: 38e06ef01fdbc0949bbcca9c3f52647f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: dd721feb0179e04458df6edb1824dc56, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a08672baac36a4468b3c56915aa474b, type: 2}
     - target: {fileID: 919132149155446097, guid: 38e06ef01fdbc0949bbcca9c3f52647f, type: 3}
       propertyPath: m_Name
       value: chest sci fi with cap (1)
@@ -830,7 +829,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &567304770
 MeshFilter:
@@ -849,7 +847,7 @@ Transform:
   m_GameObject: {fileID: 567304767}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 629.589, y: 39.4315, z: 513.688}
+  m_LocalPosition: {x: 629.589, y: 39.289497, z: 513.688}
   m_LocalScale: {x: 1.1407173, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -969,6 +967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LIGHT 1 Neon (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: b2c585d6fdd1c6f4cae99f882e628ae5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a08672baac36a4468b3c56915aa474b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1731,7 +1733,7 @@ PrefabInstance:
     - target: {fileID: -4053776490188710483, guid: 38e06ef01fdbc0949bbcca9c3f52647f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: dd721feb0179e04458df6edb1824dc56, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a08672baac36a4468b3c56915aa474b, type: 2}
     - target: {fileID: 919132149155446097, guid: 38e06ef01fdbc0949bbcca9c3f52647f, type: 3}
       propertyPath: m_Name
       value: chest sci fi with cap
@@ -1907,11 +1909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1919,7 +1921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 359701d101b29024b993548b53dda8b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1929,6 +1931,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -7835863397692276979, guid: 359701d101b29024b993548b53dda8b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a08672baac36a4468b3c56915aa474b, type: 2}
     - target: {fileID: 919132149155446097, guid: 359701d101b29024b993548b53dda8b7, type: 3}
       propertyPath: m_Name
       value: Light 2 Neon
@@ -2389,9 +2395,6 @@ MonoBehaviour:
   m_LuxAtDistance: 1
   m_Intensity: 0
   m_InnerSpotPercent: -1
-  m_ShapeWidth: 0.01
-  m_ShapeHeight: 0.01
-  m_AspectRatio: -1
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
   m_VolumetricDimmer: 1
@@ -2400,6 +2403,9 @@ MonoBehaviour:
   m_AffectDiffuse: 1
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
+  m_ShapeWidth: 0.01
+  m_ShapeHeight: 0.01
+  m_AspectRatio: -1
   m_ShapeRadius: 0.025
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
@@ -2519,14 +2525,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623301114}
   m_Enabled: 1
-  serializedVersion: 12
+  serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 130000
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 10, y: 10}
+  m_CookieSize: 10
   m_Shadows:
     m_Type: 1
     m_Resolution: -1
@@ -2733,7 +2739,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1639679206
 MeshFilter:
@@ -3060,7 +3065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ac6f1b5bb4511e4887680db16373b1a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.691
+      value: 38.549
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ac6f1b5bb4511e4887680db16373b1a, type: 3}
       propertyPath: m_LocalPosition.z
