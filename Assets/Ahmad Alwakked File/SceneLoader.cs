@@ -17,20 +17,21 @@ public class SceneLoader : MonoBehaviour
             {
                 SceneManager.LoadScene("GAME");
             }
-            else if (sceneName == "Settings")
-            {
-                SceneManager.LoadScene("MainMenu");
-            }
             else if (sceneName == "Creators")
             {
                 SceneManager.LoadScene("MainMenu");
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Screen.fullScreen = !Screen.fullScreen;
+        }
     }
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("GAME");
     }
 
     public void OpenSettings()
@@ -45,7 +46,7 @@ public class SceneLoader : MonoBehaviour
 
     public void ReturnToGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("GAME");
     }
 
     public void ReturnMainMenu()
